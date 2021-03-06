@@ -44,6 +44,13 @@ body{
   font-weight: 600;
 }
 
+span{
+  text-transform: uppercase;
+}
+
+ul li{
+  list-style: none;
+}
  /* bottoni */
  .btn {
   display: inline-block;
@@ -156,3 +163,114 @@ nav li a{
 }
 
   /* MAIN */
+
+.container{
+  background-color: #F4F9FD ;
+  margin-top: 100px;
+  
+}
+
+.intro-main{
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 150px;
+  
+}
+
+.intro-main img{
+  height: 200px;
+}
+
+.container .intro-main h2{
+  font-size: 200%;
+  margin-bottom: 50px;
+}
+
+.box{
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #d2d8dfea;
+  padding: 50px;
+}
+
+.hubspot{
+  height: 350px;
+  line-height: 20px;
+  min-width: 1200px;
+}
+
+.hubspot .learn{
+  width: 35%;
+}
+
+.text-free{
+  width: 65%;
+  text-align: left;
+}
+.hubspot .learn img{
+  height: 130px;
+}
+
+.hubspot .learn a{
+  padding: 25px;
+  margin: 7px 0;
+}
+
+.text-free h3,p,h4{
+  margin-bottom: 30px;
+}
+
+.text-free h3{
+  font-size: 150%;
+}
+
+.text-free p{
+  padding-right: 10%;
+  font-size: 115%;
+}
+.info-data { 
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.info-data:after {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  content: '';
+  display: block;
+  width: 70%;
+  height: 1px;
+ border-bottom: 2px solid #B5BBBE;
+}
+
+.check-orange li::before{
+  content: "";
+  background: url(//cdn2.hubspot.net/hubfs/53/assets/hubspot.com/partners/images/Orange_Checkmark.svg) no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-bottom: -0.3125rem;
+  margin-right: .625rem;
+}
+
+.col-3{
+  width: 29%;
+  margin-top: 60px;
+  display: inline-block;
+}
+
+.col-3 img,h3,p{
+  margin: 30px;
+}
+.col-3 img{
+  height: 120px;
+}
+
+.container-col .col-3:nth-child(2){
+  margin: 0px 6%;
+}
