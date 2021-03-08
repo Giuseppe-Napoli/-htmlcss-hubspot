@@ -14,6 +14,9 @@ body{
   font-family: 'Montserrat', sans-serif;
   color: #32495B;
 }
+p{ 
+  font-weight: 400;
+}
  
 /* tag ripetuti */
 
@@ -38,6 +41,7 @@ body{
 
 .w-50{
   width: 50%;
+  margin: auto;
 }
 
 .ft-600{
@@ -66,6 +70,11 @@ ul li{
   border: 1px solid #FE775A;
   color: #FE775A;
   padding: 9px;
+}
+
+.btn-special{
+  margin: 30px 0 10px 0;
+  padding: 20px;
 }
 
  /* HEADER */
@@ -132,7 +141,9 @@ nav li a{
   height: 760px; 
 }
 
-.jumbotron h1,p,a{
+.jumbotron h1,
+.jumbotron p,
+.jumbotron a{
   margin-bottom: 40px;
 }
 
@@ -167,11 +178,14 @@ nav li a{
 .container{
   background-color: #F4F9FD ;
   margin-top: 100px;
-  
+  padding-bottom: 50px;
+}
+
+.container h4{
+  text-transform: uppercase;
 }
 
 .intro-main{
-  margin: auto;
   padding-top: 50px;
   text-align: center;
   margin-bottom: 150px;
@@ -188,16 +202,16 @@ nav li a{
 }
 
 .box{
-  margin: auto;
   text-align: center;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 15px #d2d8dfea;
-  padding: 50px;
+  padding: 0 25px;
 }
 
 .hubspot{
   height: 350px;
+  padding-top: 65px;
   line-height: 20px;
   min-width: 1200px;
 }
@@ -219,11 +233,13 @@ nav li a{
   margin: 7px 0;
 }
 
-.text-free h3,p,h4{
+.text-free h3,
+.text-free h4,
+.text-free p{
   margin-bottom: 30px;
 }
 
-.text-free h3{
+.container h3{
   font-size: 150%;
 }
 
@@ -235,7 +251,6 @@ nav li a{
   position: relative;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  text-transform: uppercase;
 }
 .info-data:after {
   position: absolute;
@@ -255,7 +270,7 @@ nav li a{
   height: 18px;
   display: inline-block;
   margin-bottom: -0.3125rem;
-  margin-right: .625rem;
+  margin-right: 2px;
 }
 
 .col-3{
@@ -264,13 +279,44 @@ nav li a{
   display: inline-block;
 }
 
-.col-3 img,h3,p{
+.col-3 img,
+.col-3 h3,
+.col-3 p{
   margin: 30px;
 }
 .col-3 img{
   height: 120px;
 }
 
+.col-3 p{
+  padding-bottom: 60px ;
+}
+
 .container-col .col-3:nth-child(2){
   margin: 0px 6%;
+}
+
+.col-3 nav ul li{
+  display: block; 
+  text-align: left;
+  
+}
+.col-3 h4{
+  font-size: 120%;
+  padding: 40px;
+  border-top: 2px solid #899397;
+}
+
+.container-text{
+  background-image: linear-gradient(45deg,#00a4bd,#00bda5);
+  color: white;
+  padding-top: 50px;
+  height: 700px;
+  text-align: center;
+
+}
+
+.container-text h2{
+  font-size: 235%;
+  margin: 35px;
 }
