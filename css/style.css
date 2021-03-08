@@ -13,11 +13,15 @@
 body{
   font-family: 'Montserrat', sans-serif;
   color: #32495B;
+  min-width: 1200px;
 }
 p{ 
   font-weight: 400;
 }
 
+.small{
+  font-size: 80%;
+}
 .t-115{
   font-size: 115%;
 }
@@ -60,6 +64,15 @@ span{
   text-transform: uppercase;
 }
 
+h2{
+  font-size:250%;
+  margin-bottom: 30px;
+}
+
+.mb-40{
+  margin-bottom: 40px;
+}
+
 ul li{
   list-style: none;
 }
@@ -85,11 +98,14 @@ ul li{
   padding: 20px;
 }
 
+.btn-max{
+  padding: 20px 30px;
+}
+
  /* HEADER */
 
 header{
   width: 100%;
-  min-width: 1200px;
 }
 
  /* menù in movimento e fisso*/
@@ -97,9 +113,10 @@ header{
   position: fixed;
   top: 0;
   z-index: 999;
-  min-width: 1200px;
   background-color: #F4F9FD ;
   border-bottom: 1px solid #32495B;
+  min-width: 1200px;
+
 }
 
 nav li{
@@ -149,11 +166,6 @@ nav li a{
   height: 760px; 
 }
 
-.jumbotron h1,
-.jumbotron p,
-.jumbotron a{
-  margin-bottom: 40px;
-}
 
 .jumbotron-text {
   position: absolute;
@@ -171,9 +183,6 @@ nav li a{
   line-height: 2;
 }
 
-.jumbotron a{
-  padding: 20px 30px;
-}
 
 .color-header{
   background-color: #AFEBE4;
@@ -204,10 +213,7 @@ nav li a{
   height: 200px;
 }
 
-.container .intro-main h2{
-  
-  margin-bottom: 50px;
-}
+
 
 .box{
   text-align: center;
@@ -221,7 +227,6 @@ nav li a{
   height: 350px;
   padding-top: 65px;
   line-height: 20px;
-  min-width: 1200px;
 }
 
 .hubspot .learn{
@@ -241,25 +246,16 @@ nav li a{
   margin: 7px 0;
 }
 
-.text-free h3,
-.text-free h4,
-.text-free p{
-  margin-bottom: 30px;
-}
-
-.container h3{
-  
-}
-
 .text-free p{
   padding-right: 10%;
-  
 }
+
 .info-data { 
   position: relative;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
+
 .info-data:after {
   position: absolute;
   top: 10px;
@@ -324,11 +320,6 @@ nav li a{
 
 }
 
-.container-text h2{
-  font-size: 235%;
-  margin: 35px;
-}
-
 .container-img{
   margin-top: 85px;
 }
@@ -355,7 +346,7 @@ nav li a{
   border-right: 0;
 }
 
-.img-box h2{
+.img-box h3{
   font-size: 3em;
 }
 
@@ -367,5 +358,43 @@ nav li a{
   width: 40%;
 }
 
+.number{
+  position: relative;
+  margin: 100px;
+}
 
 
+.patner .number p{
+  font-size: 100%;
+  line-height: 2;
+}
+
+.sponsor{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+}
+.sponsor ul li{
+  display: inline;
+}
+
+
+.sponsor li img{
+  display: inline-block;
+  width: 20%;
+  margin: 2%;
+  margin-bottom: 15px;
+}
+
+.text-end{
+  padding: 40px 185px 0px 0px;
+}
+
+.woman{
+  text-align: right;
+}
+
+.woman img{
+  width: 40%;     
+}
