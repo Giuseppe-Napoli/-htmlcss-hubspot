@@ -1,3 +1,4 @@
+ /* GLOBAL */
 *{
   margin: 0;
   padding: 0;
@@ -13,22 +14,8 @@
 body{
   font-family: 'Montserrat', sans-serif;
   color: #32495B;
-  min-width: 1200px;
-}
-p{ 
-  font-weight: 400;
 }
 
-.small{
-  font-size: 80%;
-}
-.t-115{
-  font-size: 115%;
-}
-
-.t-170{
-font-size: 170%;
-}
  
 /* tag ripetuti */
 
@@ -44,6 +31,26 @@ font-size: 170%;
   height: 100px;
   line-height: 100px;
   width: 100%;
+}
+
+.mw-12{
+  min-width: 1200px;
+}
+
+p{ 
+  font-weight: 400;
+}
+
+.small{
+  font-size: 80%;
+}
+
+.t-115{
+  font-size: 115%;
+}
+
+.t-170{
+font-size: 170%;
 }
 
 .wt-80{
@@ -75,7 +82,15 @@ h2{
 }
 
 ul li{
+  display: inline-block;
   list-style: none;
+  padding: 0 5px;
+}
+
+li a{
+  text-decoration: none;
+  color: #32495B;
+  padding: 10px;
 }
  /* bottoni */
  .btn {
@@ -87,6 +102,7 @@ ul li{
   background-color: #FE775A;
   text-decoration: none;
 }
+
 .btn-wh {
   background-color: white;
   border: 1px solid #FE775A;
@@ -120,17 +136,6 @@ header{
 
 }
 
-nav li{
-  display: inline-block;
-  padding: 0 5px;
-}
-
- li a{
-  text-decoration: none;
-  color: #32495B;
-  padding: 10px;
-}
-
 .lingua .english i:nth-child(2){
   padding-right: 20px;
   border-right: 1px solid #32495B ;
@@ -143,7 +148,6 @@ nav li{
 .log-in li{
   margin-left: 10px;
 }
-
 
 .menu-header{
   margin-top: 100px;
@@ -160,13 +164,11 @@ nav li{
   background-size: 1805px;
 }
 
- 
  /* jumbotron */
 .jumbotron {
   position: relative;
   height: 760px; 
 }
-
 
 .jumbotron-text {
   position: absolute;
@@ -183,7 +185,6 @@ nav li{
 .jumbotron p {
   line-height: 2;
 }
-
 
 .color-header{
   background-color: #AFEBE4;
@@ -213,9 +214,7 @@ nav li{
 .intro-main img{
   height: 200px;
 }
-
-
-
+ /* parte dei box flottanti 1+3 */
 .box{
   text-align: center;
   background-color: white;
@@ -263,7 +262,7 @@ nav li{
   left: 25%;
   content: '';
   display: block;
-  width: 70%;
+  width: 60%;
   height: 1px;
  border-bottom: 2px solid #B5BBBE;
 }
@@ -324,6 +323,7 @@ nav li{
 .container-img{
   margin-top: 85px;
 }
+
 .riga-uno {
   width: 100%;
   height: 100%;
@@ -343,22 +343,27 @@ nav li{
   min-height: 70px;
 }
 
-.img-box.four, .img-box.eight{
-  border-right: 0;
+.img-box h2::after{
+  content: '\002B';
+  font-size: 70%;
+  font-weight: 400;
+  padding-left: 5px;
+  vertical-align: middle;
 }
 
-.img-box h3{
-  font-size: 3em;
+.img-box.four, .img-box.eight{
+  border-right: 0;
 }
 
 .img-box.three img{
   width: 30%;
 }
 
-.img-box.four img, .img-box.eight img{
+.img-box.four img,
+.img-box.eight img{
   width: 40%;
 }
-
+/* ultima parte main */
 .number{
   position: relative;
   margin: 100px;
@@ -376,10 +381,10 @@ nav li{
   top: 0;
   width: 50%;
 }
+
 .sponsor ul li{
   display: inline;
 }
-
 
 .sponsor li img{
   display: inline-block;
@@ -396,10 +401,12 @@ nav li{
 .woman{
   text-align: right;
 }
+
 .woman img{
   width: 40%;     
 }
 
+/* FOOTER */
 footer{
   background-color: #32495B;
 }
@@ -422,19 +429,22 @@ footer .col-4 li a{
   padding: 0;
 }
 
-.languages{
+.languages ul{
   text-align: center;
   padding: 80px 0 20px;
 }
-.languages span{
+
+.languages ul li a{
   padding: 0 0 0px 10px;
   color: white;
 }
+
 .last-container{
   padding: 40px 0;
   color: white;
   border-top:1px solid white;
 }
+
 .part-right span{
   padding-right: 20px;
 }
