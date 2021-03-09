@@ -384,6 +384,7 @@ header{
 
 .sponsor ul li{
   display: inline;
+  padding: 0;
 }
 
 .sponsor li img{
@@ -415,6 +416,10 @@ footer .col-4{
   padding-top: 50px;
   width: 25%;
   color:white
+}
+footer .col-4 li{
+  display: block;
+  margin-bottom: 3px;
 }
 
 footer .col-4 li a{
